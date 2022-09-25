@@ -1,26 +1,37 @@
-  #header {
+#main-aside-wrapper {
     flex-direction: row;
     display: flex;
+    font-size: large;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  width: 100%;
+  height: 120;
   }
-  #header main, #header aside {
-    background-color: #ddd;
+  #main-aside-wrapper main, #main-aside-wrapper aside {
+      background: #8adba2;
     margin: 10px;
     padding: 10px;
   }
-  #header aside {
+  #main-aside-wrapper aside {
     flex: 1;
     order: 1;
+    background-image: url(3.jpg);
   }
-  #header main {
-    flex: 3;
+  #main-aside-wrapper main {
+    flex: 5;
     order: 2;
-    font-size: large;
-    padding: 20px;
-    background: #8adba2;
-    color: white;
-    font-size: 30px;
-    width: 100%;
-    height: 120;
+  }
+  @media (min-width: 1024px) {
+    #main-aside-wrapper {
+      flex-direction: row;
+    }
+  }
+  @media (max-width: 768px) {
+    .menu-c {
+        background-color:  #63cf83;
+        padding: 0px 5px;
+    }
   }
   #nav {
     width: 100%;
@@ -28,6 +39,7 @@
     margin: 0 auto; 
     margin-top:20px; 
     padding:10px;
+    background-image: url(3.jpg);
   }
   .menu-c {
     max-width:960px;
@@ -52,18 +64,15 @@
     padding:10px;
     list-style-position:inside;
   }
-  img#bird{
-    float:left;
-     margin-right:10px; 
-     width:186px; 
-     height:185px;
-  }
   a{
     color: white; 
     font-weight:bold;
   }
   h1 {
   margin: 20px;
+  }
+  p{
+   padding: 10px;
   }
   table { 
     margin-top:20px;
@@ -90,4 +99,5 @@
     background: #8adba2;
     color: white;
     font-size: 30px;
+    width: 100%;
   }
