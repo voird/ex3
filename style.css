@@ -1,8 +1,8 @@
+max-device-width: 480 {}
 #header {
     flex-direction: row;
     display: flex;
     font-size: large;
-    padding: 20px;
     color: white;
     font-size: 30px;
     width: 100%;
@@ -19,32 +19,22 @@
     background-image: url(3.jpg);
   }
   #header main {
-    flex: 5;
+    flex: 3;
     order: 2;
   }
-  @media (min-width: 1024px) {
-    #header {
-      flex-direction: row;
+
+  @media (max-width: 608px) {
+    .menu-c {
+        list-style: none;
+        font-size: 25px;
+        text-align: center;
+        padding-inline-start: 0px;  
     }
-    .menu-c {
-        width:100%;
-        list-style: none;
-        font-size: 30px;
-        text-align: center;
-      }
-      
-      .menu-c li {
-        background-color:  #c6d5ac;
-        display:inline-block;
-        padding: 0px 5px;
-      }
-  }
-  @media (max-width: 768px) {
-    .menu-c {
-        width:100%;
-        list-style: none;
-        font-size: 30px;
-        text-align: center;
+      .c{
+        align-items: flex-start;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
       }
       
       .menu-c li {
@@ -54,20 +44,38 @@
       .content form {
         flex : 1;
         order: 1;
+        width: 100%;
       }
       .content table
       {
         flex: 1;
         order: 2;
+        width: 100%;
       }
+      @media (min-width: 1024px) {
+        #header {
+          flex-direction: row;
+        }
+        .menu-c {
+            width:100%;
+            list-style: none;
+            font-size: 30px;
+            text-align: center;
+          }
+          
+          .menu-c li {
+            background-color:  #c6d5ac;
+            display:inline-block;
+            padding: 0px 5px;
+          }
+      }
+      
   }
   .nav {
 background-image: url(4.jpg);
     width: 100%; 
-    margin-top:20px; 
+    margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .content {
     margin-top: 20px;
@@ -79,17 +87,6 @@ background-image: url(4.jpg);
     align-items: center;
     background-image: url(4.jpg);
   }
-  @media (max-width: 551px) {
-    .content form {
-        flex : 1;
-        order: 1;
-      }
-      .content table
-      {
-        flex: 1;
-        order: 2;
-      }
-    }
  .content h1{
     background-color: #c6d5ac;
     align-self: center;
